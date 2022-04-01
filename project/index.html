@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>schoole web templet</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		div#main {
+			padding-top: 100px;
+		height:550px;
+			background-image: url(p_15.jpg);
+			background-size: 100% 750px;
+			background-repeat: no-repeat;
+		}
+		div.banner{
+			overflow: hidden;
+			margin-top:-110px;
+			background: -webkit-linear-gradient(gray,#CCC,gray);
+			width: 100%;
+			height: 60px;
+			position: fixed;
+		}
+		img.logo {
+			margin-left: 20px;
+			width: 70px;
+			height: 70px;
+		}
+		div.banner img.logo, ul {
+			float: left;
+		}
+		div.banner ul {
+			margin-left: 825px;
+			margin-top:0;
+			padding-top: 10px;
+			list-style-type: none;
+		}
+		div.banner ul a {
+			text-decoration: none;
+		
+		}
+		div.banner ul a li  {
+			text-align: center;
+			width: 100px;
+			height: 30px;
+			padding-top: 16px;
+			float: left;
+			border-radius: 4px;
+			margin-left: 2px;
+			background-color: gray;	
+			color:white;	
+		}
+		div.banner ul  li:hover {
+			border: 1px solid white;
+			background:linear-gradient(#CCC,#CCC);
+		}
+		div.banner ul a:hover li {
+			text-shadow: 3px 4px 4px black;
+			color:black;
+		}
+		
+		h1.name_schoole {
+			text-align: center;
+			padding: 10px 10px;
+			margin-left: 320px;
+			width: 330px;
+			border-radius: 10px;
+			text-shadow: 5px 5px 5px gray;
+			background-color: white;
+			font-style: italic;
+			opacity: 0,4;
+		}
+		div.cont_page1 {
+			color: white;
+			margin: 50px 50px;
+		}
+		p.p1 {
+			font-size: 22px;
+		}
+
+		div.page2 {
+			background-color: #CCC;
+			margin-top: 0;
+			height: 360px;
+		}
+		h1.h_1 {
+			margin-top: 0px;
+			padding-top:10px;
+			padding-left: 50px;
+			background: linear-gradient(gray,#CCC,gray);
+		}
+	
+		div.classes {
+			margin-left: 150px;
+			height: 300px;
+			
+		}
+
+		div.primary, div.senior, div.high {
+			text-align: center;
+			width: 300px;
+			height: 290px;
+			float: left;
+			margin-right: 25px;
+		}
+		p.p2 {
+			margin-top: 0;
+			font-size: 18px;
+		}
+		div.p_pho {
+			background-image: url(z_boy.jpg);
+			background-size: 300px 180px;
+			animation: p_animate 20s infinite linear;
+		}
+		@keyframes p_animate {
+			0%{background-image: url(z_boy.jpg);}
+			25%{background-image: url(pic_f.jpg);}
+			50%{background-image: url(pic10.jpg);}
+			75%{background-image: url(p7.jpg);}
+			100%{background-image: url(p14.jpg);}
+		}
+
+		div.s_pho {
+			background-image: url(p20.jpg);
+			background-size: 300px 180px;
+			animation: s_animate 20s infinite linear;
+		}
+		@keyframes s_animate {
+			0%{background-image: url(p_10.jpg);}
+			25%{background-image: url(p20.jpg);}
+			50%{background-image: url(p_5.jpg);}
+			75%{background-image: url(p_19.jpg);}
+			100%{background-image: url(p12.jpg);}
+		}
+		div.h_pho {
+			background-image: url(p_8.jpg);
+			background-size: 300px 180px;
+			background-repeat: no-repeat;
+			animation: h_animate 20s infinite linear;
+		}
+		@keyframes h_animate {
+			0%{background-image: url(z_1.jpg);}
+			25%{background-image: url(z_6.jpg);}
+			50%{background-image: url(p30.jpg);}
+			75%{background-image: url(p_4.jpg);}
+			100%{background-image: url(p36.jpg);}
+		}
+		div.p_pho, div.s_pho, div.h_pho {
+			margin-bottom: 30px;
+			border: 1px solid black;
+			border-radius: 10px;
+			overflow: hidden;
+			height: 180px;
+			margin-left: 20px;
+			box-shadow: 10px 10px 5px #888888;
+
+		}
+		
+		div.p_pho:hover, div.s_pho:hover, div.h_pho:hover {
+			transform: scale(1.2);
+		}
+
+		a.href_pho {
+			padding: 8px 10px;
+			text-decoration: none;
+			border: 1px solid black;
+			font-size: 19px;
+			background: linear-gradient(#CCC, gray);
+			color: black;
+			border-radius: 3px;
+		}
+		a.href_pho:hover {
+			background: linear-gradient(gray, #CCC);
+		}
+
+
+
+
+
+
+
+		div.page3 {
+			height: 325px;
+			background-color: #CCC;
+			overflow: hidden;
+		}
+		h1.h_2 {
+			margin-top: 0px;
+			padding-top:10px;
+			padding-left: 50px;
+			width: 150px;
+			box-shadow: 10px 10px 5px #888888;
+			
+		}
+		div.us {
+			text-align: center;
+			margin-left: 200px;
+			height: 200px;
+		}
+		div.publisher, div.birth_date, div.experience{
+			height: 180px;
+			width: 300px;
+			margin-right: 25px;
+			float: left;
+			box-shadow: 10px 10px 5px #888888;
+			border-radius: 10px;
+		}
+		div.publisher:hover, div.birth_date:hover, div.experience:hover {
+			transform: scale(1.2);
+		}
+		
+		div.contact {
+			height:70px;
+			background: linear-gradient(#ccc,#888, #333);
+		}
+		h3.con {
+			width: 100px;
+			height: 20px;
+			margin-left: 50px;
+		}
+		div.icon {
+			width: 900px;
+			height: 50px;
+			margin-top: 18px;
+		}
+		h3.con, div.icon {
+			float: left;
+		}
+	
+		div.facebook, div.gmail {
+			float: left;
+			width: 207px;
+			margin-right: 150px;
+			height: 50px;
+		}
+		img.face,img.gmail_pho {
+			width: 40px;
+			height: 40px;
+		}
+		img.face, p.oxford ,img.gmail_pho, p.gmail_add {
+			float: left;
+		}
+		a {
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+<div id="main" >
+		<div class="banner">
+			<img class="logo" src="unt.png">
+			<ul>
+				<a href="#about"  name="about"><li>About</li></a>
+				<a href="#classes"><li>Classes</li></a>
+				<a href="#"   ><li>Home</li></a>
+			</ul>
+	 		
+		</div>
+		<h1 class="name_schoole">new oxford high school</h1>
+		<div class="cont_page1"  id="classes">
+			<h1>we ensure better education <br>for better world</h1>
+			<p class="p1">we are trying to be the best school in the weorld not only in a country<br>so join us for more emprovement in your life</p>
+
+		</div>
+	</div>
+	<div class="page2">
+		<h1 class="h_1">classes we offer:</h1>
+		<div class="classes">
+			<div class="primary">
+				<p class="p2">primary school</p>
+				<div class="p_pho"></div>
+				<a class="href_pho" href="enrol_page1.html">apply here</a>
+			</div>
+			<div class="senior">
+				<p class="p2">senior school</p>
+				<div class="s_pho"></div>
+				<a class="href_pho" href="enrol_page1.html">apply here</a>
+			</div>
+			<div class="high">
+				<p class="p2">high school</p>
+				<div class="h_pho"></div>
+				<a class="href_pho" href="enrol_page1.html">apply here</a>
+			</div>
+		</div>
+	</div>
+		
+	<div class="page3" id="about">
+		<h1 class="h_2">about us!</h1>
+		<div class="us">
+			<div class="publisher">
+				<h3>about publisher!</h3>
+				<h4>the publisher of this school <br>is fazluddin salehwho is <br> master in computer scince.<br>he educated in Garmany</h4>
+			</div>
+			<div class="birth_date">
+				<h3>the birth date!</h3>
+				<h4>we started teaching in 2007 <br> and still we are teaching</h4>
+			</div>
+			<div class="experience">
+				<h3>our experience!</h3>
+				<h4>we have 2 yaers experience <br> in teaching. right now we have the most<br> expert teacher in our school</h4>
+			</div>
+		</div>
+		<div class="contact">
+			<h3 class="con">contact us:</h3>
+			<div class="icon">
+				<div class="facebook">
+					<a href="http://facebook.com">
+						<img class="face" src="z_face.jpg">
+						<p class="oxford"><pre> : new oxford school</pre></p>
+					</a>
+				</div>
+				<div class="gmail">
+					<a href="http://oxford.com">
+						<img class="gmail_pho" src="z_gmail.png">
+						<p class="g_add"><pre> :  NewOxford@gmail.com</pre></p>
+					</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>
